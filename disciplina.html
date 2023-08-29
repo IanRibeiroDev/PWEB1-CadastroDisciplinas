@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Disciplina - IFPB</title>
+</head>
+
+<body>
+
+    <h3>Cadastrar Disciplina</h3>
+    Codigo: <input id="codigoCadastrar"><br>
+    Nome: <input id="nomeCadastrar">
+    <br><br>
+    <button onclick="controladorDisciplina.inserir()">Cadastrar</button>
+    <br>
+    <span id="mensagemCadastrar"></span>
+    <br><br>
+
+
+
+    <h3>Alterar Nome Disciplina</h3>
+    Codigo: <input id="codigoAlterar"><br>
+    Novo Nome: <input id="nomeAlterar">
+    <br><br>
+    <button onclick="controladorDisciplina.alterarNome()">Alterar Nome</button>
+    <br>
+    <span id="mensagemAlterar"></span>
+    <br><br>
+
+
+    <h3>Remover Disciplina</h3>
+    Codigo: <input id="codigoRemover">
+    <br><br>
+    <button onclick="controladorDisciplina.remover()">Remover</button>
+    <br>
+    <span id="mensagemRemover"></span>
+    <br><br>
+    
+    
+    <button onclick="controladorDisciplina.listarDisciplinas()">Listar Disciplinas</button><br>
+
+    <ol id="listaDisciplinas">
+
+    </ol>
+
+    <script src="modelo/disciplina.js"></script>
+    <script src="repositorio/disciplina_repositorio.js"></script>
+    <script src="servico/disciplina_service.js"></script>
+    <script src="controlador/disciplina_controlador.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
